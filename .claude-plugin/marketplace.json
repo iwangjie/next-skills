@@ -1,14 +1,23 @@
 {
-  "name": "anthropic-agent-skills",
+  "name": "next-agent-skills",
   "owner": {
-    "name": "Keith Lazuka",
-    "email": "klazuka@anthropic.com"
+    "name": "iwangjie",
+    "email": "wangchenmo1025@gmail.com"
   },
   "metadata": {
-    "description": "Anthropic example skills",
+    "description": "next agent skills",
     "version": "1.0.0"
   },
   "plugins": [
+    {
+      "name": "serviceshare-skills",
+      "description": "serviceshare tool processing around you",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./serviceshare-skill/serviceshare-wiki"
+      ]
+    },
     {
       "name": "document-skills",
       "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
